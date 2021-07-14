@@ -1,7 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:movegro/UI/Screen/OnBoarding.dart';
 import 'package:movegro/UI/Screen/RegisterScreen.dart';
+import 'package:movegro/UI/Screen/WelcomeScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key key}) : super(key: key);
@@ -17,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => RegisterScreen()));
+          context, MaterialPageRoute(builder: (context) => WelcomeScreen()));
     });
   }
 
